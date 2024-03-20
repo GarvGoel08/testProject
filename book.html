@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/satic/book.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book A Table</title>
+</head>
+<body>
+    <div class="top">
+        <img id="Logo" src="/satic/imgs/Logo.png" alt="Logo">
+        <nav class="navbar">
+            <ul>
+                <a href="Home">Home</a>
+                <a href="Book" class="Active">Book a Table</a>
+                <a href="Contact">Contact Us</a>
+                <a href="About">About Us</a>
+            </ul>
+        </nav>
+    </div>
+    <div class="Heading">
+        <h1>
+            Book a Table
+        </h1>
+    </div>
+    <form class="Formm" action="/Book" method="post">
+        <div>
+            Name:  <input type="text" name="myName" id="name">
+        </div>
+        <div>
+            Email: <input type="email" name="myEmail">
+        </div>
+        <div>
+            Date:  <input type="date" id="DateINp" name="myDate">
+        </div>
+
+        <div>
+            <input type="submit" id="SubmitButton" value="Submit Now">
+        </div>
+    </form>
+    <script>
+        const currentDate = new Date().toISOString().split('T')[0];
+        
+        document.getElementById('DateINp').value = currentDate;
+    </script>
+</body>
+</html>

@@ -1,0 +1,93 @@
+body{
+    background-color: black;
+    margin: 0px;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+.top{
+    background: #1b1e29;
+}
+#Logo{
+    height: 55px;
+    margin: 10px 0px 10px 20px;
+    display: inline-block;
+}
+.navbar{
+    display: inline-block;
+    position: absolute;
+    vertical-align: middle;
+    right: 20px;
+    font-size: 20px;
+    margin: 10px 0 0 0;
+}
+.navbar ul a{
+    color: rgb(129, 129, 129);
+    margin: 0px 16px 0 0;
+    text-decoration: none;
+}
+.navbar ul a:hover{
+    color: rgb(223, 223, 223);
+    text-decoration: none;
+}
+.navbar ul a.Active{
+    color: rgb(223, 223, 223);
+    text-decoration: none;
+}
+.contact-container {
+    margin: 0px;
+    display: flex;
+    align-items: stretch;
+    overflow: hidden;
+}
+
+.contact-form {
+    flex: 1;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+}
+
+input,
+textarea {
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px;
+    cursor: pointer;
+}
+.message{
+    max-height: 124px;
+}
+.contact-image {
+    flex: 1;
+    background-image: url('your-image.jpg');
+    background-size: cover;
+    background-position: center;
+}

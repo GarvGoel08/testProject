@@ -1,0 +1,170 @@
+body{
+    background-color: black;
+    margin: 0px;
+}
+img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+.top{
+    background: #1b1e29;
+}
+#Logo{
+    height: 55px;
+    margin: 10px 0px 10px 20px;
+    display: inline-block;
+}
+.navbar{
+    display: inline-block;
+    position: absolute;
+    vertical-align: middle;
+    right: 20px;
+    font-size: 20px;
+    margin: 10px 0 0 0;
+}
+.navbar ul a{
+    color: rgb(129, 129, 129);
+    margin: 0px 16px 0 0;
+    text-decoration: none;
+}
+.navbar ul a:hover{
+    color: rgb(223, 223, 223);
+    text-decoration: none;
+}
+.navbar ul a.Active{
+    color: rgb(223, 223, 223);
+    text-decoration: none;
+}
+.RegPanel{
+    background-image: linear-gradient(rgba(5, 2, 28,0.6), rgba(5, 2, 28,0.6)), url('imgs/Thumbnail.png');
+    background-repeat: no-repeat;
+    color: white;
+    text-align: center;
+    width: 100%;
+
+}
+#Heading{
+    margin: auto;
+    padding: 90px 0 40px 0;
+    font-size: 42px;
+}
+
+#RegDesc{
+    margin: 0 76px 28px 76px;
+    color: rgb(213, 213, 213);
+    padding: 0 0 24px 0;
+    font-size: 20px;
+}
+#Book {
+    margin: 0 0 60px 0;
+    border: 0;
+    background-color: #574130;
+    padding: 6px 20px;
+    font-size: 16px;
+    color: rgb(175, 174, 174);
+    transition: color 0.8s ease-in-out; 
+}
+
+#Book:hover {
+    cursor: pointer;
+    color: white; 
+}
+.About{
+    color: rgb(19, 21, 28);
+    display: flex;
+    align-items: center;
+}
+.Abouttxt{
+    color: white;
+    width: 50%;
+}
+#Reachus{
+    padding: 6px 0 0 60px;
+    font-size: 36px;
+}
+#ReachDesc{
+    padding: 0 30px 0 60px;
+    font-size: 22px;
+}
+.bookings{
+    font-size: 20px;
+    padding: 16px 18px 0 60px;
+}
+.aboutimg{
+    position: relative;
+    width: 50%;
+    height: 100%;
+    display: flex; 
+    align-items: center;
+    box-sizing: border-box;
+    overflow: hidden;
+    box-sizing: border-box; 
+}
+#FoodIMG{
+    width: 100%; 
+    object-fit: cover;
+}
+@media (max-width: 990px) {
+    .About {
+        flex-direction: column; /* Stack items vertically */
+        text-align: center; /* Center align text */
+    }
+    #Reachus{
+        padding: 0;
+        font-size: 36px;
+    }
+    #ReachDesc{
+        padding: 00;
+        font-size: 22px;
+    }
+    .bookings{
+        font-size: 20px;
+        padding: 0;
+    }
+    .Abouttxt {
+        width: 100%; /* Take full width */
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    .aboutimg {
+        width: 100%;
+        height: auto; /* Reset height to auto for responsive behavior */
+    }
+}
+
+.timingsdiv{
+    background: rgb(13, 19, 28);
+    color: white;
+}
+#Timingstxt {
+    padding: 80px 0 20px 60px;
+    font-size: 36px;
+}
+
+.schedule {
+    display: flex;
+    align-items: center; /* Vertically align items */
+}
+
+.day {
+    flex: 1; /* Take up available space */
+}
+
+.time {
+    flex: 1; /* Take up available space */
+    text-align: right; /* Align text to the right */
+}
+.days{
+    font-size: 24px;
+    color: rgb(188, 188, 188);
+    margin: 18px 0 28px 60px;
+}
+.timing{
+    font-size: 24px;
+    color: rgb(188, 188, 188);
+    margin: 18px 60px 28px 0;
+}
+.lastday{
+    margin-bottom: 60px;
+}
